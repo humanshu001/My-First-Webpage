@@ -1,0 +1,158 @@
+* {
+    margin: 0px;
+    padding: 0px;
+    color: white;
+}
+body {
+    background-color: black;
+}
+/* CSS Variables */
+:root {
+    --1st_color: rgb(109, 109, 109);
+}
+
+
+/* CSS Grid */
+.container {
+    display: grid;
+    grid-template-columns: 60px 5fr 3fr;
+    grid-gap: 50px;
+}
+
+.box:first-child {
+    grid-column: 1 /span 3;
+
+}
+
+.box:nth-child(2) {
+    grid-row: 2 /span 3;
+    grid-column: 1/span 2;
+}
+
+.box:nth-child(3) {
+    grid-row: 2 /span 3;
+}
+
+.box:nth-child(4) {
+    grid-column: 1 /span 3;
+}
+
+.box {
+    
+    padding: 7px 30px;
+}
+
+/* Navigation Bar*/
+#box2{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.navtag {
+    display: inline;
+}
+#navbar {
+    margin: 0px;
+    display: flex;
+    align-items: center;
+}
+#navbar ul {
+    list-style: none;
+    display: inline;
+    padding-left: 370px;
+}
+#navbar a {
+    text-decoration: none;
+    margin: 15px 20px;
+    padding: 10px 30px;
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    font-size: 20px;
+    color: rgb(255, 255, 255);
+}
+
+#navbar a:hover {
+    color: --1st_color;
+    background-color: var(--1st_color);
+    border-radius: 10px;
+}
+
+/* Nvigation Bar: Logo Image Styling */
+.logo {
+    display: inline;
+}
+
+.logo img {
+    width: 100px;
+    filter: invert(100%)
+}
+
+/* mainline anlmation */
+
+
+
+/* Section Styling */
+#home{
+    text-align: center;
+    font-family:cursive;
+    padding: 230px;
+    height: 1535.75px;
+    background-image: url(assets/images/bg1.avif);
+    background-position-x: center;
+    border-radius: 20px;
+    background-repeat: no-repeat;
+    background-size: cover;
+    opacity: 0.6;
+}
+
+#home h1{
+    padding: 30px 40px;
+    font-size: 70px;
+}
+#home p{
+    padding: 30px 40px;
+    font-size: 40px;
+}
+
+
+
+
+/* Aside Styling */
+#box3{
+    display: flex;
+    justify-content: flex-start;
+    flex-direction: column;
+    background-color: rgba(143, 153, 153, 0.425);
+    border-radius: 20px;
+}
+#aside{
+    padding: 30px 30px;
+    font-family: cursive;
+}
+
+/* Aside: Image Styling */
+.image img{
+    width: 200px;
+    border-radius: 10px;
+}
+.image{
+    display: flex;
+    padding-right:80px;
+    flex-direction: column-reverse;
+    align-items: end;
+}
+
+
+
+/* Footer Styling */
+.fa {
+    padding: 20px;
+    font-size: 25px;
+    width: 30px;
+    text-align: center;
+    text-decoration: none;
+    border-radius: 50%;
+}
+footer{
+    text-align: center;
+    align-self: last baseline;
+}
